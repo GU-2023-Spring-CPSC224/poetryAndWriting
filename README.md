@@ -1,3 +1,5 @@
 # poetryAndWriting
 
-Writing and other things.cd 
+Writing and other things. 
+"~~~~~~~~~~~~~~~~~~~~~~~"
+"~~~~~~~~~~~~~~~~~~~~~~~"
