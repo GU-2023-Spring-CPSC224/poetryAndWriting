@@ -1,0 +1,44 @@
+DBMS Final Review
+
+Cardinality: number of rows of a table
+Arity: number of columns of a table
+
+Primary Key
+Other Types
+Super Key
+combo that uniquely identifies rows
+Minimal Key
+super key w/ minimal set of attributes
+Valid Key
+Valid if it contains a Minimal Key
+Composite Key
+FILL
+Foreign Key
+FILL
+REFERENCES
+
+
+CREATE TABLE ( );
+
+CREATE TABLE flight (
+	carrier CHAR(2)  NOT NULL,
+	flight_numb SMALLINT NOT NULL,
+	source VARCHAR(3) NOT NULL,
+	dest VARCHAR(3) NOT NULL,
+	duration TIME NOT NULL,
+	PRIMARY KEY (carrier, flight_numb),
+	FOREIGN KEY (carrier) REFERENCES Airline (code)
+CONSTRAINT smt CHECK smt
+);
+
+INSERT INTO table VALUES ();
+
+INSERT INTO flight VALUES (“AS”, 159, “GEG”, “PDX”, “01:10:00”)
+
+SELECT (DISTINCT) attributes FROM table WHERE constraints ORDERBY (ASC, DESC)
+
+SELECT DISTINCT a.name, a.headquarters 
+FROM flight f JOIN airline a ON (f.carrier = a.code)
+WHERE (a.dest = “SEA” OR a.source = “PDX”) AND a.founded > 1980
+ORDER BY a.name ASC
+
